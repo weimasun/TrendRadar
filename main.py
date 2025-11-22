@@ -953,7 +953,8 @@ def matches_word_groups(
     if not word_groups:
         return True
 
-    title_lower = title.lower()
+    title_str = str(title) if title is not None else ""
+    title_lower = title_str.lower()
 
     # 过滤词检查
     if any(filter_word.lower() in title_lower for filter_word in filter_words):
@@ -1153,7 +1154,7 @@ def count_word_frequency(
             source_mobile_url = title_data.get("mobileUrl", "")
 
             # 找到匹配的词组
-            title_lower = title.lower()
+            title_lower = str(title).lower()
             for group in word_groups:
                 required_words = group["required"]
                 normal_words = group["normal"]
