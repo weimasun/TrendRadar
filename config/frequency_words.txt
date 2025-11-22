@@ -33,11 +33,6 @@ DJI
 !车
 !餐
 
-三体
-流浪地球
-刘慈欣
-郭帆
-
 申奥
 
 京东
@@ -70,11 +65,6 @@ sora
 
 claude
 Anthropic
-
-iphone
-ipad
-mac
-ios
 
 ai
 !gai
